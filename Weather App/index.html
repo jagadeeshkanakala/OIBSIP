@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body >
+    <div class="main">
+        <h3 style="color: black;">Weather Today</h3>
+        <div class="error"></div>
+        <form action="#" for="name" id="input__form">
+            <input type="text" name="name" id="name" placeholder="Enter City" required>
+            <button class="btn submit__btn" >Submit</button>
+        </form>
+
+
+        <section class="report">
+            <div class="current__report">
+                <div class="report__day">
+                    <p class="day bolder"></p>
+                    <p class="date"></p>
+                    <p class="location"><i class="uil uil-location-point"></i> <span>---</span></p>
+                </div>
+                <div class="more">Click</div>
+
+    
+                <div class="report__data">
+                    <img src="./Assset/sunny.svg" alt="" id="report__img" style="color: white;">
+                    <P class="temp"><span>--</span><sup>o</sup>C</P>
+                    <h4 class="weather bolder">--</h4>
+
+                </div>
+            </div>
+
+            <div class="report__info">
+                <h5 class="prec">PRECIPITATION <span>0%</span></h5>
+                <h5 class="hum">HUMIDITY <span>--</span></h5>
+                <h5 class="wind">WIND <span>--</span></h5>
+                
+    
+                <div class="forecast">
+                    <article class="active">
+                        <img src="./Assset/sunny.svg" alt="" id="weather__img">
+                        <p id="day">Fri</p>
+                        <p class="bolder"><span>25</span><sup>o</sup>C</p>
+                    </article>
+                    <article class="">
+                        <img src="./Assset/sunny.svg" alt="" id="weather__img">
+                        <p id="day">Sat</p>
+                        <p class="bolder"><span>26</span><sup>o</sup>C</p>
+                    </article>
+                    <article class="">
+                        <img src="./Assset/sunny.svg" alt="" id="weather__img">
+                        <p id="day">Sun</p>
+                        <p class="bolder"><span>28</span><sup>o</sup>C</p>
+                    </article>
+                    <article class="">
+                        <img src="./Assset/sunny.svg" alt="" id="weather__img">
+                        <p id="day">Mon</p>
+                        <p class="bolder"><span>24</span><sup>o</sup>C</p>
+                    </article>
+                </div>
+    
+                <button class="btn change__btn" type="submit" style="width: 100%;"><i class="uil uil-location-point"></i>Change Location</button>
+            </div>
+    
+
+        </section>
+    </div>
+
+
+    
+</body>
+<script src="./script.js"></script>
+</html>
